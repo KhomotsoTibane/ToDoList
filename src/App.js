@@ -29,10 +29,11 @@ function App() {
   }
 
   return (
-
+    <div> 
     <div className="container">
       <div className="heading">
         <h1>To-Do List</h1>
+
       </div>
       <div className="form">
         <input onChange={handleChange} type="text" value={inputText} />
@@ -52,7 +53,9 @@ function App() {
           ))}
         </ul>
       </div>
-    </div>   
+    </div> 
+    <h6>note:clicking on an item will delete the item from the list</h6> 
+    </div> 
   );
 }
 
